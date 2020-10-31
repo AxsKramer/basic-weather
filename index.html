@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="row">
+            <div class="col-12">
+                <header class="header">
+                    <h2 class="text-center mb-3">Look for the weather in your city</h2>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 result" id="result"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 mb-3">
+                <h6 class="col-12 text-center">Enter your city and select your country</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="resultError"></div>
+        </div>
+        <form id="form">
+            <div class="form-group">
+                <input id='city' class="form-control" type="text" name="city" placeholder="Enter your city" autofocus>
+            </div>
+            <div class="form-group">
+                <select id="country" class="form-control" >
+                    <option value="">Choose the country</option>
+                    <option value="AR">Argentina</option>
+                    <option value="CO">Colombia</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="ES">Spain</option>
+                    <option value="US">United States</option>
+                    <option value="MX">Mexico</option>
+                    <option value="PE">Peru</option>
+                </select>
+            </div>
+            <button type="sumbit" class="btn btn-lg btn-block btn-info mibtn">GET WEATHER</button>
+        </form>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
